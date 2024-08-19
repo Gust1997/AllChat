@@ -1,10 +1,12 @@
 import './App.css';
+import Chatroom from './components/Chatroom';
+import SearchBar from './components/SearchBar';
 
 function App() {
   return (
     <div className="App">
-      <h1>HELLO WORLD</h1>
-      <h2>Im making another change</h2>
+      <SearchBar/>
+      <Chatroom/>
     </div>
   );
 }

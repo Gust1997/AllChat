@@ -1,0 +1,10 @@
+.chatroom {
+    padding: 10px;
+    display: inline-block;
+    border-style: solid;
+    border-width: 5px;
+}
+
+.chatroom > * {
+    margin: 5px;
+}
