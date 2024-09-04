@@ -1,7 +1,7 @@
 function SearchBar() {
     return (
         <form>
-            <input type="text" id="search" name="search"/>
+            <input type="text" id="search" name="search" placeholder="Search..."/>
             <input type="submit" value="Search"/>
         </form>
 )}
