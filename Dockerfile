@@ -43,6 +43,7 @@ COPY pg_hba.conf /etc/postgresql/pg_hba.conf
 RUN chmod +x /app/start.sh
 
 # Expose ports
+EXPOSE 80
 EXPOSE 8000
 EXPOSE 5432
 

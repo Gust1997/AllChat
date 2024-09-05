@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service 
+metadata:
+  name: all-chat-service
+spec:
+  selector:
+    app: all-chat
+  ports:
+    - name: http
+      protocol: TCP 
+      port: 80
+      targetPort: 8000
+    - name: postgres
+      protocol: TCP
+      port: 5432
+      targetPort: 5432
+  type: LoadBalancer
+  
+

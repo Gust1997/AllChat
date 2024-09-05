@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment 
+metadata:
+  name: all-chat-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: all-chat
+  template:
+    metadata:
+      labels:
+        app: all-chat
+    spec:
+      containers:
+        - name: all-chat-container
+          image: gustavod97/allchat:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8000
+              name: http 
+            - containerPort: 5432
+              name: postgres
